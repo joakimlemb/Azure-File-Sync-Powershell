@@ -1,0 +1,8 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_CLASSES_ROOT\*\shell\AFS Tier to Azure]
+@="Azure File Sync - Tier To Azure"
+"Icon"="%SystemRoot%\\System32\\shell32.dll,24"
+
+[HKEY_CLASSES_ROOT\*\shell\AFS Tier to Azure\command]
+@="C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe -ExecutionPolicy Unrestricted -NoLogo -File \"C:\\PSScript\\AzureFileSync-Tier-Files-Context-Menu.ps1\" -FilePath \"%1\""
